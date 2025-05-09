@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Photo Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="Travel Photo Explorer Logo" class="logo">
+                <h1>Travel Photo Explorer</h1>
+            </div>
+            <p class="header-subtitle">Explore destinations with stunning images and personalized descriptions</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search a destination or vibe..." />
+                <button id="search-button">Search</button>
+            </div>
+        </section>
+
+        <!-- Description from Groq API -->
+        <section id="description" class="description">
+            <p id="travel-description">Enter a location or vibe to see images and AI-generated descriptions.</p>
+        </section>
+
+        <!-- Image Gallery from Unsplash API -->
+        <section id="image-gallery" class="image-gallery">
+            <!-- Images will be dynamically injected here -->
+        </section>
+
+        <!-- Image Details Section (appears after image click) -->
+        <section id="image-details" class="image-details">
+            <h3>Place Details</h3>
+            <p id="place-name"></p>
+            <p id="place-country"></p>
+            <p id="place-info"></p>
+
+            <!-- Popover with Download and Share Buttons -->
+            <div id="popover" class="popover">
+                <button id="download-btn" class="action-btn">Download </button>
+                <button id="share-btn" class="action-btn">Share </button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Travel Photo Explorer | Powered by Unsplash & Groq </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
